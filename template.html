@@ -7,24 +7,27 @@
     <title>Vogue Mockup Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <link href="styles/styles.css"
         href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Roboto:ital,wght@1,700&family=Source+Sans+Pro:wght@200&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
     <header>
-        <div>VOGUE</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Beauty</a></li>
-                <li><a href="#">Runway</a></li>
-                <li><a href="#">Shopping</a></li>
-                <li><a href="#">Wedding</a></li>
-
+        <nav class="navbar">
+            <a href="#" class="nav-branding">VOGUE</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Beauty</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Runway</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Shopping</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Wedding</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
         <div>Subscribe</div>
         <div>Sign In</div>
@@ -39,7 +42,7 @@
 
         </section>
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
