@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Arapey', serif;
 }
 
 header {
@@ -33,9 +34,7 @@ a {
 }
 
 .nav-branding {
-    font-size: 2rem;
-    font-family: 'Arapey', serif;
-
+    font-size: 5rem;
 
 }
 
@@ -44,7 +43,7 @@ a {
 }
 
 .nav-link:hover {
-    color: dodgerblue;
+    color: gray;
 }
 
 .hamburger {
@@ -69,8 +68,20 @@ nav {
 }
 
 @media (max-width:768px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .nav-branding {
+        font-size: 2rem;
+    }
+
     .hamburger {
         display: block;
+
     }
 
     .hamburger.active .bar:nth-child(2) {
