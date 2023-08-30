@@ -2,6 +2,11 @@
 <html lang="en-US">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arapey&family=Inter+Tight:wght@500;600&family=Roboto:ital,wght@1,700&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vogue Mockup Page</title>
@@ -10,36 +15,64 @@
     <link href="styles/styles.css"
         href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Roboto:ital,wght@1,700&family=Source+Sans+Pro:wght@200&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
     <header>
-        <div>VOGUE</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Beauty</a></li>
-                <li><a href="#">Runway</a></li>
-                <li><a href="#">Shopping</a></li>
-                <li><a href="#">Wedding</a></li>
-
+        <nav class="navbar">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-branding-container">
+                <a href="#" class="nav-branding">VOGUE</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Beauty</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Runway</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Fashion</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Wedding</a></li>
             </ul>
         </nav>
-        <div>Subscribe</div>
-        <div>Sign In</div>
     </header>
     <main>
-        <h1>HOME</h1>
-        <section>
-            <p>Wedding</p>
-            <p>Runway</p>
-            <p>Shopping</p>
-            <p>Beauty</p>
-
-        </section>
+        <div class="main-content">
+            <h1 class="page-title">TODAY'S STORIES</h1>
+            <section class="page-content">
+                <a href="beauty.html" class="page-item">
+                    <img src="./photos/beauty.jpg" alt="Beauty" class="page-item-image">
+                    <p class="page-item-text">Beauty</p>
+                </a>
+                <a href="runway.html" class="page-item">
+                    <img src="./photos/runway.jpg" alt="Runway" class="page-item-image">
+                    <p class="page-item-text">Runway</p>
+                </a>
+                <a href="fashion.html" class="page-item">
+                    <img src="./photos/fashion.jpg" alt="Fashion" class="page-item-image">
+                    <p class="page-item-text">Fashion</p>
+                </a>
+                <a href="wedding.html" class="page-item">
+                    <img src="./photos/Wedding.jpg" alt="Wedding" class="page-item-image">
+                    <p class="page-item-text">Wedding</p>
+                </a>
+            </section>
+        </div>
+        <div class="calendar">
+            <h1 class="calendar-title">VIEW PAST ARTICLES</h1>
+            <ul class="weekday-list">
+                <li class="weekday"><a class="weekday-link" href="#">Monday</a></li>
+                <li class="weekday"><a class="weekday-link" href="#">Tuesday</a></li>
+                <li class="weekday"><a class="weekday-link" href="#">Wednesday</a></li>
+                <li class="weekday"><a class="weekday-link" href="#">Thursday</a></li>
+                <li class="weekday"><a class="weekday-link" href="#">Friday</a></li>
+                <li class="weekday"><a class="weekday-link" href="#">Saturday</a></li>
+                <li class="weekday"><a class="weekday-link" href="#">Sunday</a></li>
+            </ul>
+        </div>
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@ li {
     list-style: none;
 }
 
-a {
+.nav-link {
     color: white;
     text-decoration: none;
 }
@@ -35,6 +35,8 @@ a {
 
 .nav-branding {
     font-size: 5rem;
+    text-decoration: none;
+    color: white;
 
 }
 
@@ -65,6 +67,49 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.main-content {
+    display: grid;
+
+}
+
+.weekday {
+    color: black;
+}
+
+.weekday-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.calendar-title {
+    text-align: center;
+}
+
+.page-item {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(25% - 20px);
+    /* Adjust as needed */
+    margin: 10px;
+    /* Add margin between items */
+    max-width: 300px;
+    /* Limit maximum width of each item */
+}
+
+.page-item-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.page-item-text {
+    margin: 0;
 }
 
 @media (max-width:768px) {
